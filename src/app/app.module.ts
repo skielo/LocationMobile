@@ -8,6 +8,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Databaseservice } from "../providers/databaseservice";
 
+export const firebaseConfig = {
+apiKey: '',
+authDomain: '',
+databaseURL: '',
+storageBucket: '',
+messagingSenderId: ''
+};
+
 @NgModule({
   declarations: [
     MyApp,
