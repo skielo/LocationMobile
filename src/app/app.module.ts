@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Databaseservice } from "../providers/databaseservice";
+import { AngularFireModule } from "angularfire2";
 
 export const firebaseConfig = {
 apiKey: '',
@@ -23,7 +24,8 @@ messagingSenderId: ''
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
