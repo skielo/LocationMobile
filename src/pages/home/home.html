@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      List test
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  This is just a list test.
+  <ion-list>
+  <ion-item class="text" *ngFor="let item of accounts | async">
+    {{item.$value}}
+  </ion-item>
+  </ion-list>
+</ion-content>
